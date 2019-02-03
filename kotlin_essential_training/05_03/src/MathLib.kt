@@ -1,10 +1,10 @@
 class MathLib {
     companion object {
 
-        const val ADD = "+"
-        const val SUBTRACT = "-"
-        const val MULTIPLY = "*"
-        const val DIVIDE = "/"
+//        const val ADD = "+"
+//        const val SUBTRACT = "-"
+//        const val MULTIPLY = "*"
+//        const val DIVIDE = "/"
         const val OPERATIONS = "+ - * /"
 
         fun addValues(number1: Double, number2: Double) = number1 + number2

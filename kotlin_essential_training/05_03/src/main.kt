@@ -1,3 +1,5 @@
+import Operation.*
+
 fun main(args: Array<String>) {
     try {
         val number1 = MathLib.getInput("Number 1: ")
@@ -8,10 +10,10 @@ fun main(args: Array<String>) {
 
         val result: Double? =
                 when (operation) {
-                    MathLib.ADD -> MathLib.addValues(number1, number2)
-                    MathLib.SUBTRACT -> MathLib.subtractValues(number1, number2)
-                    MathLib.MULTIPLY -> MathLib.multiplyValues(number1, number2)
-                    MathLib.DIVIDE -> MathLib.divideValues(number1, number2)
+                    ADD.operator -> MathLib.addValues(number1, number2)
+                    SUBTRACT.operator -> MathLib.subtractValues(number1, number2)
+                    MULTIPLY.operator -> MathLib.multiplyValues(number1, number2)
+                    DIVIDE.operator -> MathLib.divideValues(number1, number2)
                     else -> throw Exception("Unknown operation")
                 }
         println("The answer is $result")
